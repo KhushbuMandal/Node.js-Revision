@@ -17,5 +17,5 @@ app.listen (PORT , () => {
 })
 
 /*
-app.METHOD(PATH , HANDLER FUNCTION)
+app.METHOD(PATH , HANDLER FUNCTION) 
 */
