@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require ("express");
 const app = express();
 const fs = require("fs")
@@ -37,7 +38,7 @@ const userSchema  = new mongoose.Schema ({
 
 // Connection
 mongoose
-.connect("mongodb://127.0.0.1:27017/nodejs")
+.connect(process.env.MONGODB_URL)
 .then(() => console.log("MongoDB Connected"))
 .catch((err) => console.log("Mongo Error" , err) );
 
